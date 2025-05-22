@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Redirect after animation
         setTimeout(() => {
-            window.location.replace('index.html');
+            window.location.replace('home.html');
         }, 1500); // 1.5 seconds delay
     });
 
