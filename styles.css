@@ -480,6 +480,11 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
+@media (max-width: 768px) {
+  .feature-card {
+    flex-direction: row;
+  }
+}
 
 .feature-card:hover {
   transform: translateY(-5px);
