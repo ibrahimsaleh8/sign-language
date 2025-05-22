@@ -41,8 +41,8 @@ a {
 }
 
 .logo img {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
 }
 
 .nav-links {
@@ -195,7 +195,11 @@ a {
   z-index: 2;
   text-align: right;
 }
-
+@media (max-width: 768px) {
+  .hero-content {
+    text-align: center;
+  }
+}
 .hero h1 {
   font-size: 4.5em;
   margin-bottom: 20px;
@@ -224,7 +228,7 @@ a {
 
 .cta-button,
 .secondary-button {
-  padding: 18px 36px;
+  padding: 18px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
@@ -404,16 +408,10 @@ footer {
     font-size: 1.4em;
   }
 
-  .hero-buttons {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-
   .cta-button,
   .secondary-button {
     width: 100%;
-    max-width: 300px;
+    max-width: 150px;
     text-align: center;
   }
 
@@ -468,10 +466,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   flex-wrap: wrap;
 }
-
+.another-logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
 .feature-card {
   display: flex;
   flex-direction: column;
@@ -484,11 +491,6 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid rgba(255, 255, 255, 0.2);
-}
-@media (max-width: 768px) {
-  .feature-card {
-    flex-direction: row;
-  }
 }
 
 .feature-card:hover {
@@ -527,7 +529,6 @@ body {
 
 .feature-content h3 {
   color: #333;
-  font-size: 1.5rem;
   margin-bottom: 1rem;
   font-weight: 600;
 }
@@ -813,7 +814,7 @@ li {
   }
 
   .nav-container {
-    padding: 15px 20px;
+    padding: 10px 20px;
   }
 }
 
@@ -829,8 +830,8 @@ li {
   }
 
   .logo img {
-    width: 40px;
-    height: 40px;
+    width: 70px;
+    height: 70px;
   }
 }
 
@@ -1078,7 +1079,9 @@ html {
   }
 
   .subtitle {
-    font-size: 1.2em;
+    font-size: 26px;
+    margin-top: 3px;
+    font-weight: 600;
   }
 
   .input-label label,
@@ -2701,7 +2704,7 @@ strong {
   border: 0px;
   outline: 0px;
   color: #fff;
-  width: 300px;
+  width: 150px;
   max-width: 100%;
   padding: 20px;
   border-radius: 10px;
