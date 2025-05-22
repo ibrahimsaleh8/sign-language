@@ -331,6 +331,13 @@ footer {
   padding: 0;
   margin: 0;
 }
+@media (max-width: 768px) {
+  .footer-content {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}
 
 .footer-links li {
   margin-bottom: 12px;
@@ -446,6 +453,13 @@ body {
   100% {
     background-position: 100px 100px;
   }
+}
+.hero-features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .feature-card {
@@ -667,7 +681,7 @@ textarea:focus {
   border-radius: 10px;
   padding: 20px;
   margin-top: 20px;
-  min-height: 400px;
+  min-height: 450px;
 }
 
 .sign-display {

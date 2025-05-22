@@ -26,7 +26,7 @@
         <ul class="nav-links">
           <li><a href="home.html">الرئيسية</a></li>
           <li><a href="text-converter.html">محول النصوص</a></li>
-          <li><a href="image-scan.html" class="active">ماسح الصور</a></li>
+          <li><a href="image-scan.html" class="active">مسح كتاب</a></li>
           <li><a href="audio-converter.html">محول الصوت</a></li>
           <li><a href="about.html">من نحن</a></li>
           <li><a href="contact.html">اتصل بنا</a></li>
@@ -41,7 +41,7 @@
     <ul class="small-nav-links" id="small-nav-links">
       <li><a href="home.html">الرئيسية</a></li>
       <li><a href="text-converter.html">محول النصوص</a></li>
-      <li><a href="image-scan.html" class="active">ماسح الصور</a></li>
+      <li><a href="image-scan.html" class="active">مسح كتاب</a></li>
       <li><a href="audio-converter.html">محول الصوت</a></li>
       <li><a href="about.html">من نحن</a></li>
       <li><a href="contact.html">اتصل بنا</a></li>
@@ -49,7 +49,7 @@
 
     <div class="container converter-container">
       <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
-        <span class="section-tag">ماسح الصور</span>
+        <span class="section-tag">مسح كتاب</span>
         <a
           href="home.html"
           class="return-home-btn"
@@ -112,6 +112,16 @@
             ></textarea>
             <div class="text-actions">
               <button type="button" class="btn">
+                <strong> تحويل النص </strong>
+                <div id="container-stars">
+                  <div id="stars"></div>
+                </div>
+                <div id="glow">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+              </button>
+              <button type="button" class="btn">
                 <strong>
                   <i class="fas fa-copy"></i>
                   نسخ
@@ -146,6 +156,92 @@
           <p class="status-text">جاري معالجة الصورة...</p>
         </div>
       </div>
+    </div>
+
+    <!-- Another Features -->
+
+    <div class="hero-features" data-aos="fade-up" data-aos-duration="1000">
+      <a
+        href="text-converter.html"
+        class="feature-card"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <div
+          class="feature-image"
+          style="
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto;
+          "
+        >
+          <img
+            src="./images/text-icon-to-sign-language.png"
+            alt="تحويل النصوص"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+        </div>
+        <div class="feature-content">
+          <h3>تحويل النصوص</h3>
+          <p>حول النصوص العربية إلى لغة الإشارة بسهولة</p>
+        </div>
+      </a>
+      <a
+        href="image-scan.html"
+        class="feature-card"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
+        <div
+          class="feature-image"
+          style="
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto;
+          "
+        >
+          <img
+            src="./images/scan.jpg"
+            alt="تحويل الصور"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+        </div>
+        <div class="feature-content">
+          <h3>مسح كتاب</h3>
+          <p>استخرج النصوص من الصور وحولها إلى لغة الإشارة</p>
+        </div>
+      </a>
+      <a
+        href="audio-converter.html"
+        class="feature-card"
+        data-aos="fade-up"
+        data-aos-delay="400"
+      >
+        <div
+          class="feature-image"
+          style="
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto;
+          "
+        >
+          <img
+            src="./images/sound-icon-to-sign-language.png"
+            alt="تحويل الصوت"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+        </div>
+        <div class="feature-content">
+          <h3>تحويل الصوت</h3>
+          <p>حول الصوتيات إلى نصوص ثم إلى لغة الإشارة</p>
+        </div>
+      </a>
     </div>
 
     <footer data-aos="fade-up" data-aos-duration="1000">
