@@ -1645,6 +1645,7 @@ html {
     position: relative;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
+
 }
 
 .contact-form {
@@ -1803,6 +1804,7 @@ html {
     .contact-form-container {
         padding: 30px 20px;
         margin: 0;
+        width: 100%;
     }
 
     .contact-form input,
@@ -1821,6 +1823,7 @@ html {
     .contact-form-container {
         padding: 25px 15px;
         margin: 0;
+        width: 100%;
     }
 
     .contact-form input,
@@ -1884,7 +1887,7 @@ html {
     }
 
     .contact-container {
-        padding: 40px 20px;
+        padding: 40px 10px;
     }
 
     .submit-button {
@@ -2770,7 +2773,6 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
     justify-content: center;
     position: relative;
     transition: all 0.3s ease;
-    min-width: 200px;
     width: 300px;
     margin-right: auto;
     padding: 20px;
@@ -2779,6 +2781,11 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
     font-style: normal;
     font-size: 18px;
     font-weight: 600;
+  }
+  @media (max-width: 768px) {
+    .button-sent {
+      width: 100%;
+    }
   }
   .button-sent:hover {
     transform: scale(1.02);
