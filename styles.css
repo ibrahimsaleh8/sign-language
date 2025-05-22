@@ -133,6 +133,11 @@ a {
   align-items: center;
   padding: 0 20px;
 }
+@media (max-width: 768px) {
+  .hero-container {
+    padding: 0;
+  }
+}
 
 .hero-images {
   position: relative;
@@ -513,6 +518,11 @@ body {
 .feature-content {
   padding: 5px 20px;
   text-align: center;
+}
+@media (max-width: 768px) {
+  .feature-content {
+    padding: 5px 10px;
+  }
 }
 
 .feature-content h3 {
