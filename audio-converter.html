@@ -68,32 +68,15 @@
         data-aos="fade-up"
         data-aos-duration="1000"
       >
-        <div class="upload-area" id="uploadArea">
-          <div class="upload-content">
-            <i class="fas fa-microphone"></i>
-            <h3>اسحب وأفلت الملف هنا</h3>
-            <p>أو</p>
-            <label for="audioFile" class="upload-button">
-              اختر ملف
-              <input type="file" id="audioFile" accept=".mp3" hidden />
-            </label>
-            <p class="file-info">يدعم ملفات MP3</p>
-          </div>
-        </div>
-
         <!-- Add Recording Section -->
         <div class="recording-section" data-aos="fade-up" data-aos-delay="200">
           <div class="section-header">
             <h3>تسجيل صوتي مباشر</h3>
           </div>
           <div class="recording-controls">
-            <button onclick="startRecognition()" id="record" class="record-btn">
+            <button id="record" class="record-btn">
               <i class="fas fa-microphone"></i>
               <span>بدء التسجيل</span>
-            </button>
-            <button id="stop" class="stop-btn">
-              <i class="fas fa-stop"></i>
-              <span>إيقاف التسجيل</span>
             </button>
           </div>
           <div class="recording-preview" style="display: none">
