@@ -107,7 +107,20 @@
             <label>لغة الإشارة:</label>
           </div>
           <div id="signLanguageDisplay" class="sign-display">
-            <video id="avatar_video" src=""></video>
+            <video
+              id="avatar_video"
+              controls
+              style="
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+              "
+            >
+              <source src="video.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       </div>
@@ -265,18 +278,18 @@
       });
     </script>
     <script>
-      btnConvert = document.querySelector('#convert_text');
-      usertext = document.querySelector('#textInput');
-      avatarvideo = document.querySelector('#avatar_video');
-      btnConvert.onclick = ()=>{
-        console.log(usertext.value)
-        if(usertext.value == "مرحبا"){
-          avatarvideo.src = "test.mp4"
-          avatarvideo.autoplay = true
-          avatarvideo.muted = true
+      btnConvert = document.querySelector("#convert_text");
+      usertext = document.querySelector("#textInput");
+      avatarvideo = document.querySelector("#avatar_video");
+      btnConvert.onclick = () => {
+        console.log(usertext.value);
+        if (usertext.value == "مرحبا") {
+          avatarvideo.src = "test.mp4";
+          avatarvideo.autoplay = true;
+          avatarvideo.muted = true;
         }
-        usertext.value = ""
-      }
+        usertext.value = "";
+      };
     </script>
   </body>
 </html>
