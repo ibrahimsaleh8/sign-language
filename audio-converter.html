@@ -99,7 +99,7 @@
               placeholder="سيظهر النص المحول هنا..."
             ></textarea>
             <div class="text-actions">
-              <button type="button" class="btn">
+              <button type="button" class="btn" id="convertTextButton">
                 <strong> تحويل النص </strong>
                 <div id="container-stars">
                   <div id="stars"></div>
@@ -130,7 +130,10 @@
             <label>لغة الإشارة:</label>
           </div>
           <div id="signLanguageDisplay" class="sign-display">
-            <!-- ستظهر لغة الإشارة هنا -->
+            <video id="signLanguageVideo" controls>
+              <source src="video.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
 
@@ -290,6 +293,33 @@
               .catch((err) => {
                 console.error("Failed to copy text: ", err);
               });
+          }
+        });
+
+      // Add convert text functionality
+      document
+        .getElementById("convertTextButton")
+        .addEventListener("click", function () {
+          const textToConvert = document.getElementById("convertedText").value;
+          if (textToConvert) {
+            // Show loading state
+            const button = this;
+            const originalText = button.querySelector("strong").innerHTML;
+            button.querySelector("strong").innerHTML =
+              '<i class="fas fa-spinner fa-spin"></i> جاري التحويل...';
+
+            // Here you would typically make an API call to get the sign language video
+            // For demonstration, we'll simulate a delay and show a sample video
+            setTimeout(() => {
+              const videoElement = document.getElementById("signLanguageVideo");
+              // Replace this URL with your actual sign language video URL
+              videoElement.src = "video.mp4";
+              videoElement.style.display = "block";
+              videoElement.play();
+
+              // Reset button text
+              button.querySelector("strong").innerHTML = originalText;
+            }, 1500);
           }
         });
     </script>
