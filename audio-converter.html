@@ -109,7 +109,7 @@
                   <div class="circle"></div>
                 </div>
               </button>
-              <button type="button" class="btn">
+              <button type="button" class="btn" id="copyButton">
                 <strong>
                   <i class="fas fa-copy"></i>
                   نسخ
@@ -268,6 +268,30 @@
         mirror: false,
         offset: 100,
       });
+
+      // Add copy functionality
+      document
+        .getElementById("copyButton")
+        .addEventListener("click", function () {
+          const textToCopy = document.getElementById("convertedText").value;
+          if (textToCopy) {
+            navigator.clipboard
+              .writeText(textToCopy)
+              .then(() => {
+                // Show a temporary success message
+                const button = this;
+                const originalText = button.querySelector("strong").innerHTML;
+                button.querySelector("strong").innerHTML =
+                  '<i class="fas fa-check"></i> تم النسخ';
+                setTimeout(() => {
+                  button.querySelector("strong").innerHTML = originalText;
+                }, 2000);
+              })
+              .catch((err) => {
+                console.error("Failed to copy text: ", err);
+              });
+          }
+        });
     </script>
   </body>
 </html>
