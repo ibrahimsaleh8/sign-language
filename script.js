@@ -149,14 +149,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  convertBtn.addEventListener("click", () => {
-    const text = textInput.value.trim();
-    if (text) {
-      const signs = convertToSignLanguage(text);
-      displaySignLanguage(signs);
-      animateSigns();
-    }
-  });
+  // convertBtn.addEventListener("click", () => {
+  //   const text = textInput.value.trim();
+  //   if (text) {
+  //     const signs = convertToSignLanguage(text);
+  //     displaySignLanguage(signs);
+  //     animateSigns();
+  //   }
+  // });
 
   // Allow conversion on Enter key
   textInput.addEventListener("keypress", (e) => {

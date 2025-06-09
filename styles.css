@@ -3351,7 +3351,6 @@ strong {
 }
 @media (max-width: 768px) {
   #avatar_video {
-    width: 300px;
     height: 400px;
   }
 }
