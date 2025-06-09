@@ -78,7 +78,7 @@
             placeholder="اكتب النص العربي هنا..."
           ></textarea>
           <div class="button-container">
-            <button class="animated-button">
+            <button id="convert_text" class="animated-button">
               <svg
                 viewBox="0 0 24 24"
                 class="arr-2"
@@ -107,7 +107,7 @@
             <label>لغة الإشارة:</label>
           </div>
           <div id="signLanguageDisplay" class="sign-display">
-            <!-- ستظهر لغة الإشارة هنا -->
+            <video id="avatar_video" src=""></video>
           </div>
         </div>
       </div>
@@ -255,7 +255,7 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({
@@ -263,6 +263,20 @@
         mirror: false,
         offset: 100,
       });
+    </script>
+    <script>
+      btnConvert = document.querySelector('#convert_text');
+      usertext = document.querySelector('#textInput');
+      avatarvideo = document.querySelector('#avatar_video');
+      btnConvert.onclick = ()=>{
+        console.log(usertext.value)
+        if(usertext.value == "مرحبا"){
+          avatarvideo.src = "test.mp4"
+          avatarvideo.autoplay = true
+          avatarvideo.muted = true
+        }
+        usertext.value = ""
+      }
     </script>
   </body>
 </html>

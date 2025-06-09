@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <title>تحويل الكلام إلى لغة الإشارة</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="sounde-converter.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- main nav links -->
+    <nav class="navbar" data-aos="fade-down" data-aos-duration="1000">
+      <div class="nav-container">
+        <div class="logo">
+          <img src="./images/logo.png" alt="" />
+          <span>وصال</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="home.html">الرئيسية</a></li>
+          <li><a href="text-converter.html">محول النصوص</a></li>
+          <li><a href="image-scan.html">مسح كتاب</a></li>
+          <li><a href="audio-converter.html" class="active">محول الصوت</a></li>
+          <li><a href="about.html">من نحن</a></li>
+          <li><a href="contact.html">اتصل بنا</a></li>
+        </ul>
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <div class="sound-converter-container">
+      <h1>تحويل الكلام إلى لغة الإشارة</h1>
+
+      <button onclick="startRecognition()" id="record" class="record-btn">
+        <i class="fas fa-microphone"></i>
+        <span>بدء التسجيل</span>
+      </button>
+
+      <p id="spokenText">النص سيظهر هنا...</p>
+      <video id="signVideo" controls autoplay muted></video>
+
+      <div class="converted-text-section">
+        <div class="section-header">
+          <h3>النص المحول:</h3>
+        </div>
+        <div class="text-box">
+          <textarea
+            id="convertedText"
+            readonly
+            placeholder="سيظهر النص المحول هنا..."
+          ></textarea>
+          <div class="text-actions">
+            <button type="button" class="btn">
+              <strong> تحويل النص </strong>
+              <div id="container-stars">
+                <div id="stars"></div>
+              </div>
+              <div id="glow">
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+            </button>
+            <button type="button" class="btn">
+              <strong>
+                <i class="fas fa-copy"></i>
+                نسخ
+              </strong>
+              <div id="container-stars">
+                <div id="stars"></div>
+              </div>
+              <div id="glow">
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="output-section">
+        <div class="output-label">
+          <label>لغة الإشارة:</label>
+        </div>
+        <div id="signLanguageDisplay" class="sign-display">
+          <!-- ستظهر لغة الإشارة هنا -->
+        </div>
+      </div>
+    </div>
+
+    <script src="soundConverter.js"></script>
+  </body>
+</html>

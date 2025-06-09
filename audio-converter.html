@@ -88,7 +88,7 @@
             <h3>تسجيل صوتي مباشر</h3>
           </div>
           <div class="recording-controls">
-            <button id="record" class="record-btn">
+            <button onclick="startRecognition()" id="record" class="record-btn">
               <i class="fas fa-microphone"></i>
               <span>بدء التسجيل</span>
             </button>
@@ -304,7 +304,7 @@
       </div>
     </footer>
     <script src="script.js"></script>
-    <!-- <script src="audio-converter.js"></script> -->
+    <script src="soundConverter.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({
