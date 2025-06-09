@@ -1,82 +1,88 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // Password visibility toggle
-    const togglePassword = document.querySelector('.toggle-password');
-    const passwordInput = document.querySelector('#password');
+document.addEventListener("DOMContentLoaded", () => {
+  // Password visibility toggle
+  const togglePassword = document.querySelector(".toggle-password");
+  const passwordInput = document.querySelector("#password");
 
-    togglePassword.addEventListener('click', () => {
-        const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
-        passwordInput.setAttribute('type', type);
-        
-        // Toggle eye icon
-        const icon = togglePassword.querySelector('i');
-        icon.classList.toggle('fa-eye');
-        icon.classList.toggle('fa-eye-slash');
+  togglePassword.addEventListener("click", () => {
+    const type =
+      passwordInput.getAttribute("type") === "password" ? "text" : "password";
+    passwordInput.setAttribute("type", type);
+
+    // Toggle eye icon
+    const icon = togglePassword.querySelector("i");
+    icon.classList.toggle("fa-eye");
+    icon.classList.toggle("fa-eye-slash");
+  });
+
+  // Form submission
+  const loginForm = document.querySelector(".login-form");
+  const loginButton = document.querySelector(".login-button");
+
+  loginForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    // Add loading state
+    loginButton.classList.add("loading");
+
+    // Set authentication state
+    setAuthenticated(true);
+
+    // Redirect after animation
+    setTimeout(() => {
+      window.location.replace("home.html");
+    }, 1500); // 1.5 seconds delay
+  });
+
+  // Social login buttons
+  const socialButtons = document.querySelectorAll(".social-button");
+  socialButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const platform = button.classList.contains("google")
+        ? "Google"
+        : "Facebook";
+      showNotification(`جاري تسجيل الدخول باستخدام ${platform}...`, "info");
     });
-
-    // Form submission
-    const loginForm = document.querySelector('.login-form');
-    const loginButton = document.querySelector('.login-button');
-
-    loginForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        
-        // Add loading state
-        loginButton.classList.add('loading');
-        
-        // Redirect after animation
-        setTimeout(() => {
-            window.location.replace('home.html');
-        }, 1500); // 1.5 seconds delay
-    });
-
-    // Social login buttons
-    const socialButtons = document.querySelectorAll('.social-button');
-    socialButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const platform = button.classList.contains('google') ? 'Google' : 'Facebook';
-            showNotification(`جاري تسجيل الدخول باستخدام ${platform}...`, 'info');
-        });
-    });
+  });
 });
 
 // Notification system
-function showNotification(message, type = 'info') {
-    // Create notification element
-    const notification = document.createElement('div');
-    notification.className = `notification ${type}`;
-    notification.innerHTML = `
+function showNotification(message, type = "info") {
+  // Create notification element
+  const notification = document.createElement("div");
+  notification.className = `notification ${type}`;
+  notification.innerHTML = `
         <i class="fas ${getIconForType(type)}"></i>
         <span>${message}</span>
     `;
 
-    // Add to document
-    document.body.appendChild(notification);
+  // Add to document
+  document.body.appendChild(notification);
 
-    // Trigger animation
-    setTimeout(() => notification.classList.add('show'), 10);
+  // Trigger animation
+  setTimeout(() => notification.classList.add("show"), 10);
 
-    // Remove after delay
-    setTimeout(() => {
-        notification.classList.remove('show');
-        setTimeout(() => notification.remove(), 300);
-    }, 3000);
+  // Remove after delay
+  setTimeout(() => {
+    notification.classList.remove("show");
+    setTimeout(() => notification.remove(), 300);
+  }, 3000);
 }
 
 function getIconForType(type) {
-    switch(type) {
-        case 'success':
-            return 'fa-check-circle';
-        case 'error':
-            return 'fa-exclamation-circle';
-        case 'warning':
-            return 'fa-exclamation-triangle';
-        default:
-            return 'fa-info-circle';
-    }
+  switch (type) {
+    case "success":
+      return "fa-check-circle";
+    case "error":
+      return "fa-exclamation-circle";
+    case "warning":
+      return "fa-exclamation-triangle";
+    default:
+      return "fa-info-circle";
+  }
 }
 
 // Add notification styles
-const style = document.createElement('style');
+const style = document.createElement("style");
 style.textContent = `
     .notification {
         position: fixed;
@@ -134,4 +140,4 @@ style.textContent = `
         color: #2196F3;
     }
 `;
-document.head.appendChild(style); 
+document.head.appendChild(style);
