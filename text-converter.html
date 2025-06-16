@@ -238,7 +238,7 @@
       });
     </script>
 
-    <script>
+    <!-- <script>
       btnConvert = document.querySelector("#convert_text");
       usertext = document.querySelector("#textInput");
       avatarvideo = document.querySelector("#avatar_video");
@@ -246,16 +246,17 @@
       btnConvert.onclick = () => {
         if (usertext.value.trim() !== "") {
           avatarvideo.style.display = "block";
-          avatarvideo.src = "video.mp4";
+          avatarvideo.src = "https://files.catbox.moe/bxewen.mp4";
           avatarvideo.play();
         } else {
           alert("الرجاء إدخال نص للتحويل");
         }
       };
-    </script>
+    </script> -->
 
     <script src="script.js"></script>
     <script src="auth.js"></script>
     <script src="checking.js"></script>
+    <script src="converter.js"></script>
   </body>
 </html>

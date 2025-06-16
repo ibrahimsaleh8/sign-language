@@ -262,6 +262,7 @@
     </footer>
     <script src="script.js"></script>
     <script src="soundConverter.js"></script>
+    <script src="converter.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({
@@ -306,18 +307,29 @@
             button.querySelector("strong").innerHTML =
               '<i class="fas fa-spinner fa-spin"></i> جاري التحويل...';
 
-            // Here you would typically make an API call to get the sign language video
-            // For demonstration, we'll simulate a delay and show a sample video
-            setTimeout(() => {
-              const videoElement = document.getElementById("signLanguageVideo");
-              // Replace this URL with your actual sign language video URL
-              videoElement.src = "video.mp4";
-              videoElement.style.display = "block";
-              videoElement.play();
+            // Find matching keywords
+            const matches = findMatchingKeywords(textToConvert);
 
-              // Reset button text
+            if (matches.length === 0) {
+              alert("لم يتم العثور على كلمات مطابقة في النص");
               button.querySelector("strong").innerHTML = originalText;
-            }, 1500);
+              return;
+            }
+
+            // Clear previous content
+            const signLanguageDisplay = document.getElementById(
+              "signLanguageDisplay"
+            );
+            signLanguageDisplay.innerHTML = "";
+
+            // Create and append video elements for each match
+            matches.forEach((match) => {
+              const videoElement = createVideoElement(match.link);
+              signLanguageDisplay.appendChild(videoElement);
+            });
+
+            // Reset button text
+            button.querySelector("strong").innerHTML = originalText;
           }
         });
     </script>
