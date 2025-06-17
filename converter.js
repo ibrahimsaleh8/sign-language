@@ -7,7 +7,7 @@ const Keywords = [
   {
     keyword: "توثيق",
     variations: ["توثيق", "توثيق", "توثيق"],
-    link: "https://files.catbox.moe/6u80wo.mp4",
+    link: "https://files.catbox.moe/pmq54b.mp4",
   },
   {
     keyword: "مشاركة",
@@ -204,15 +204,22 @@ const Keywords = [
     variations: ["مسابقه علمية"],
     link: "https://files.catbox.moe/uzm8v3.mp4",
   },
-  {
-    keyword: "مساعده ماليه",
-    variations: ["مساعده ماليه"],
-    link: "https://files.catbox.moe/sx2qqc.mp4",
-  },
+
   {
     keyword: "مستقبل",
     variations: ["مستقبل"],
     link: "https://files.catbox.moe/o44r9e.mp4",
+  },
+
+  {
+    keyword: "شهاده تدريب",
+    variations: ["شهاده تدريب", "شهادة تدريب"],
+    link: "https://files.catbox.moe/ne1l00.mp4",
+  },
+  {
+    keyword: "مساعده ماليه",
+    variations: ["مساعدة ماليه", "مساعده مالية", "مساعدة مالية"],
+    link: "https://files.catbox.moe/sx2qqc.mp4",
   },
   {
     keyword: "معرض",
