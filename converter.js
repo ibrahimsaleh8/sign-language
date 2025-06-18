@@ -6,13 +6,73 @@ const Keywords = [
   },
   {
     keyword: "توثيق",
-    variations: ["توثيق", "توثيق", "توثيق"],
+    variations: ["توثيق"],
     link: "https://files.catbox.moe/pmq54b.mp4",
   },
   {
+    keyword: "اجابات نموذجية",
+    variations: ["اجابات نموذجية", "اجابات نموذجيه"],
+    link: "https://files.catbox.moe/mwh2fo.mp4",
+  },
+  {
+    keyword: "ادوات معملية",
+    variations: ["ادوات معمليه", "ادوات معملية"],
+    link: "https://files.catbox.moe/rz8pj1.mp4",
+  },
+  {
+    keyword: "انقطاع عن الدراسة",
+    variations: ["انقطاع عن الدراسه", "انقطاع عن الدراسة"],
+    link: "https://files.catbox.moe/fzktjv.mp4",
+  },
+  {
     keyword: "مشاركة",
-    variations: ["مشاركة", "مشاركه", "مشاركة"],
+    variations: ["مشاركة", "مشاركه"],
     link: "https://files.catbox.moe/zld6tl.mp4",
+  },
+  {
+    keyword: "باور بوينت",
+    variations: ["باور بوينت"],
+    link: "https://files.catbox.moe/npjmic.mp4",
+  },
+  {
+    keyword: "برنامج متبادل",
+    variations: ["برنامج متبادل"],
+    link: "https://files.catbox.moe/9hsp7w.mp4",
+  },
+  {
+    keyword: "تحويل الفلوس",
+    variations: ["تحويل الفلوس"],
+    link: "https://files.catbox.moe/2p200v.mp4",
+  },
+  {
+    keyword: "تصحيح ذاتي",
+    variations: ["تصحيح ذاتي"],
+    link: "https://files.catbox.moe/eaesvj.mp4",
+  },
+  {
+    keyword: "تعليم عن بعد",
+    variations: ["تعليم عن بعد"],
+    link: "https://files.catbox.moe/mahc01.mp4",
+  },
+  {
+    keyword: "جلسات إرشاد",
+    variations: ["جلسات إرشاد"],
+    link: "https://files.catbox.moe/a8e6lh.mp4",
+  },
+  {
+    keyword: "سوق العمل",
+    variations: ["سوق العمل"],
+    link: "https://files.catbox.moe/22g1kw.mp4",
+  },
+  {
+    keyword: "مبتكر جامعي",
+    variations: ["مبتكر جامعي"],
+    link: "https://files.catbox.moe/g5yf4w.mp4",
+  },
+  {
+    keyword: "تحويل من الكلية",
+    variations: ["تحويل من الكلية", "تحويل من الكليه"],
+    link: "https://files.catbox.moe/qeiiwy.mp4",
   },
   {
     keyword: "أسئلة سنوات سابقة",
@@ -210,6 +270,31 @@ const Keywords = [
     variations: ["مستقبل"],
     link: "https://files.catbox.moe/o44r9e.mp4",
   },
+  {
+    keyword: "ترميم",
+    variations: ["ترميم"],
+    link: "https://files.catbox.moe/jwqf8k.mp4",
+  },
+  {
+    keyword: "جروب كلية",
+    variations: ["جروب كلية", "جروب كليه"],
+    link: "https://files.catbox.moe/agnlmc.mp4",
+  },
+  {
+    keyword: "عمليه",
+    variations: ["عمليه", "عملية"],
+    link: "https://files.catbox.moe/o6lqp5.mp4",
+  },
+  {
+    keyword: "مناهج",
+    variations: ["مناهج"],
+    link: "https://files.catbox.moe/wbf8yu.mp4",
+  },
+  {
+    keyword: "وقت اضافي",
+    variations: ["وقت اضافي"],
+    link: "https://files.catbox.moe/i4350x.mp4",
+  },
 
   {
     keyword: "شهاده تدريب",
@@ -293,20 +378,153 @@ const Keywords = [
     ],
     link: "https://files.catbox.moe/example2.mp4",
   },
+
   {
-    keyword: "محاضرة",
-    variations: [
-      "محاضرة",
-      "محاضرات",
-      "المحاضرة",
-      "المحاضرات",
-      "محاضره",
-      "محاضرات",
-    ],
-    link: "https://files.catbox.moe/example3.mp4",
+    keyword: "إثبات وجود",
+    variations: ["إثبات وجود"],
+    link: "https://files.catbox.moe/ynym33.mp4",
+  },
+  {
+    keyword: "إختبار إلكتروني",
+    variations: ["إختبار إلكتروني"],
+    link: "https://files.catbox.moe/7dff02.mp4",
+  },
+  {
+    keyword: "اسبوع",
+    variations: ["اسبوع"],
+    link: "https://files.catbox.moe/5qrc9j.mp4",
+  },
+  {
+    keyword: "إضافة مدخلات",
+    variations: ["إضافة مدخلات"],
+    link: "https://files.catbox.moe/0fosde.mp4",
+  },
+  {
+    keyword: "إعادة تقييم",
+    variations: ["إعادة تقييم"],
+    link: "https://files.catbox.moe/xt5fcy.mp4",
+  },
+  {
+    keyword: "إفادة شرف",
+    variations: ["إفادة شرف"],
+    link: "https://files.catbox.moe/1dej11.mp4",
+  },
+  {
+    keyword: "البيت",
+    variations: ["البيت"],
+    link: "https://files.catbox.moe/236t4n.mp4",
+  },
+  {
+    keyword: "المساواة",
+    variations: ["المساواة"],
+    link: "https://files.catbox.moe/wf4fkn.mp4",
+  },
+  {
+    keyword: "انذار دراسة",
+    variations: ["انذار دراسة"],
+    link: "https://files.catbox.moe/33n8wh.mp4",
+  },
+  {
+    keyword: "اول دفعة",
+    variations: ["اول دفعة"],
+    link: "https://files.catbox.moe/zd7th4.mp4",
+  },
+  {
+    keyword: "اين مكانك",
+    variations: ["اين مكانك"],
+    link: "https://files.catbox.moe/reug5b.mp4",
+  },
+  {
+    keyword: "بث مباشر",
+    variations: ["بث مباشر"],
+    link: "https://files.catbox.moe/yulmfz.mp4",
+  },
+  {
+    keyword: "تأشيرة طالب",
+    variations: ["تأشيرة طالب"],
+    link: "https://files.catbox.moe/9tin4j.mp4",
+  },
+  {
+    keyword: "تأمين صحي",
+    variations: ["تأمين صحي"],
+    link: "https://files.catbox.moe/8czwr4.mp4",
+  },
+  {
+    keyword: "تسجيل محاضرات",
+    variations: ["تسجيل محاضرات"],
+    link: "https://files.catbox.moe/635hjj.mp4",
+  },
+  {
+    keyword: "ثبات إداري",
+    variations: ["ثبات إداري"],
+    link: "https://files.catbox.moe/m3dpcf.mp4",
+  },
+  {
+    keyword: "جدول امتحانات",
+    variations: ["جدول امتحانات"],
+    link: "https://files.catbox.moe/0jg5f8.mp4",
+  },
+  {
+    keyword: "سوق دعم",
+    variations: ["سوق دعم"],
+    link: "https://files.catbox.moe/kbgzen.mp4",
+  },
+  {
+    keyword: "قاموس كلمات",
+    variations: ["قاموس كلمات"],
+    link: "https://files.catbox.moe/l84aie.mp4",
+  },
+  {
+    keyword: "لوحات",
+    variations: ["لوحات"],
+    link: "https://files.catbox.moe/jks3mi.mp4",
+  },
+  {
+    keyword: "محاضرة اونلاين",
+    variations: ["محاضرة اونلاين"],
+    link: "https://files.catbox.moe/99mj20.mp4",
+  },
+  {
+    keyword: "مساحة",
+    variations: ["مساحة"],
+    link: "https://files.catbox.moe/eyxrco.mp4",
+  },
+  {
+    keyword: "مشغول",
+    variations: ["مشغول"],
+    link: "https://files.catbox.moe/yy00rx.mp4",
+  },
+  {
+    keyword: "مصداقية بحثية",
+    variations: ["مصداقية بحثية"],
+    link: "https://files.catbox.moe/m35jn2.mp4",
+  },
+  {
+    keyword: "مقرر إختياري",
+    variations: ["مقرر إختياري"],
+    link: "https://files.catbox.moe/j8cekv.mp4",
+  },
+  {
+    keyword: "منحه",
+    variations: ["منحه"],
+    link: "https://files.catbox.moe/j6eq08.mp4",
+  },
+  {
+    keyword: "مواد عامة",
+    variations: ["مواد عامة"],
+    link: "https://files.catbox.moe/wbrshq.mp4",
+  },
+  {
+    keyword: "مؤلف",
+    variations: ["مؤلف"],
+    link: "https://files.catbox.moe/hegoxe.mp4",
+  },
+  {
+    keyword: "واجب خطي",
+    variations: ["واجب خطي"],
+    link: "https://files.catbox.moe/lcn7k6.mp4",
   },
 ];
-
 // Get DOM elements
 const btnConvert = document.querySelector("#convert_text");
 const userText = document.querySelector("#textInput");
