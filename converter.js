@@ -361,23 +361,6 @@ const Keywords = [
     variations: ["هدف", "أهداف", "الهدف", "الأهداف"],
     link: "https://files.catbox.moe/ukdoyw.mp4",
   },
-  {
-    keyword: "واجب",
-    variations: ["واجب", "واجبات", "الواجب", "الواجبات"],
-    link: "https://files.catbox.moe/example1.mp4",
-  },
-  {
-    keyword: "اختبار",
-    variations: [
-      "اختبار",
-      "اختبارات",
-      "الاختبار",
-      "الاختبارات",
-      "امتحان",
-      "امتحانات",
-    ],
-    link: "https://files.catbox.moe/example2.mp4",
-  },
 
   {
     keyword: "إثبات وجود",
